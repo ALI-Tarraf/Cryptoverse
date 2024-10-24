@@ -20,6 +20,8 @@ function App() {
             <Routes>
               <Route path="/" element={<Homepage />} />
 
+              <Route path="/Cryptoverse" element={<Homepage />} />
+
               <Route path="/cryptocurrencies" element={<Cryptocurrencies />} />
 
               <Route path="/crypto/:coinId" element={<CryptoDetails />} />
