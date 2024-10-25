@@ -18,9 +18,9 @@ function App() {
         <Layout>
           <div className="routes">
             <Routes>
-              <Route path="/" element={<Homepage />} />
+              <Route path="/" exact element={<Homepage />} />
 
-              <Route path="/Cryptoverse" element={<Homepage />} />
+              <Route path="/Cryptoverse" exact element={<Homepage />} />
 
               <Route path="/cryptocurrencies" element={<Cryptocurrencies />} />
 
