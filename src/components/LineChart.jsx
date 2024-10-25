@@ -25,7 +25,7 @@ const LineChart = ({ coinHistory, currentPrice, coinName, timePeriod }) => {
     coinPrice.push(coinHistory?.data.history[i]?.price);
   }
   for (let i = 0; i < coinHistory?.data?.history?.length; i += 1) {
-    if (timePeriod === "3h" || "24h") {
+    if (timePeriod === "3h" || timePeriod === "24h") {
       coinTimestamp.push(
         new Date(
           coinHistory?.data?.history[i].timestamp * 1000
